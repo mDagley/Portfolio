@@ -164,4 +164,57 @@ body {
         flex-wrap: wrap;
         column-gap: 50px;
     }
+
+    #personalProjectGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        margin-top: 25px;
+
+        .project-card{
+
+            .project-image{
+                width: 100%;
+                height: 50vh;
+                background: $light-color;
+                position: relative;
+
+                .project-overlay{
+                    display: none;
+
+                    .view-more-button{
+                        background: none;
+                        border: none;
+                        color: #FFF;
+                        font-size: 24px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover .project-overlay{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    background-color: rgba($dark-color, .7);
+                    cursor: pointer;
+                }
+
+            }
+
+            .project-title{
+                font-size: 24px;
+                letter-spacing: 1.5px;
+                margin-bottom: 15px;
+            }
+
+            .project-description{
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
 }
