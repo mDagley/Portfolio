@@ -260,6 +260,7 @@ body p {
 }
 
 #wrapper #projectModal {
+  display: none;
   position: fixed;
   height: 80vh;
   width: 80vw;
@@ -298,6 +299,7 @@ body p {
   border: none;
   font-weight: 700;
   font-size: 30px;
+  cursor: pointer;
 }
 
 #wrapper #projectModal #closeModal svg {

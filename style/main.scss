@@ -212,6 +212,7 @@ body {
     }
 
     #projectModal {
+        display: none;
         position: fixed;
         height: 80vh;
         width: 80vw;
@@ -245,6 +246,7 @@ body {
             border: none;
             font-weight: 700;
             font-size: 30px;
+            cursor: pointer;
 
             svg {
                 height: 30px;

@@ -20,3 +20,15 @@ wrapper.onscroll = function () {
     }
 
 }
+
+let closeButton = document.getElementById("closeModal");
+
+closeButton.addEventListener("click", function(){
+    let modal = document.getElementById("projectModal");
+    modal.style.display = "none";
+})
+
+function openModal(){
+    let modal = document.getElementById("projectModal");
+    modal.style.display = "block";
+}
