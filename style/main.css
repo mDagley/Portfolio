@@ -126,15 +126,15 @@ body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 24px;
   margin-top: 50px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background-color: #152d35;
   padding: 14px 20px;
   padding-right: 90px;
@@ -153,8 +153,8 @@ body p {
 }
 
 #wrapper .scroll-down .button-icon .icon-path {
-  -webkit-transition: .1s ease all;
-  transition: .1s ease all;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
 }
 
 #wrapper .scroll-down:hover, #wrapper .scroll-down:focus {
@@ -177,7 +177,7 @@ body p {
      object-fit: contain;
   -o-object-position: bottom center;
      object-position: bottom center;
-  opacity: .25;
+  opacity: 0.25;
   z-index: -1;
 }
 
@@ -225,7 +225,7 @@ body p {
 #wrapper #personalProjectGrid .project-card .project-image .project-overlay .view-more-button {
   background: none;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
@@ -257,5 +257,65 @@ body p {
 #wrapper #personalProjectGrid .project-card .project-description {
   margin: 0;
   font-size: 20px;
+}
+
+#wrapper #projectModal {
+  position: fixed;
+  height: 80vh;
+  width: 80vw;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px;
+}
+
+#wrapper #projectModal #modalContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+#wrapper #projectModal #modalContent #modalDetails {
+  padding-top: 40px;
+}
+
+#wrapper #projectModal #modalContent #modalMoreDetails {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#wrapper #projectModal #closeModal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#wrapper #projectModal #closeModal svg {
+  height: 30px;
+}
+
+#wrapper #projectModal #modalLinks {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+#wrapper #projectModal #modalLinks .modal-link {
+  text-decoration: none;
+  color: #152d35;
+}
+
+#wrapper #projectModal #modalLinks .modal-link svg {
+  height: 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,7 +13,7 @@ body {
     height: 100vh;
     color: $dark-color;
 
-    p{
+    p {
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 1.25px;
@@ -29,11 +29,10 @@ body {
     height: 100%;
 
     section {
-        
         background: none;
         padding: 25px;
 
-        @media(min-width: 1200px){
+        @media (min-width: 1200px) {
             min-height: calc(100vh - 100px);
             padding: 50px;
         }
@@ -42,31 +41,26 @@ body {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            
 
-            @media(min-width: 1200px){
+            @media (min-width: 1200px) {
                 min-height: 100%;
                 justify-content: center;
             }
-
-            
-            }
-            
         }
+    }
 
-        .section-content{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                color: #fff;
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
 
-                &#aboutContent {
-                width: 100%;
-                @media(min-width: 1200px){
-                    width: 50%;
-                    
-                }
+        &#aboutContent {
+            width: 100%;
+            @media (min-width: 1200px) {
+                width: 50%;
             }
+        }
     }
 
     .header {
@@ -101,14 +95,14 @@ body {
     .scroll-down {
         display: flex;
         align-items: center;
-        color: #FFF;
+        color: #fff;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
         font-size: 24px;
         margin-top: 50px;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         background-color: $dark-color;
         padding: 14px 20px;
         padding-right: 90px;
@@ -124,23 +118,24 @@ body {
             right: 20px;
             top: 10px;
 
-            .icon-path{
-                transition: .1s ease all;
+            .icon-path {
+                transition: 0.1s ease all;
             }
         }
 
-        &:hover, &:focus{
-            background-color: rgba($dark-color, .8);
-            box-shadow: 0px 0px 10px 2px rgba($light-color, .5);
-            .button-icon{
-                .icon-path{
+        &:hover,
+        &:focus {
+            background-color: rgba($dark-color, 0.8);
+            box-shadow: 0px 0px 10px 2px rgba($light-color, 0.5);
+            .button-icon {
+                .icon-path {
                     fill: $light-color;
                 }
             }
         }
     }
 
-    #pandaImage{
+    #pandaImage {
         position: fixed;
         bottom: 0;
         max-width: 100%;
@@ -148,10 +143,10 @@ body {
         max-height: 975px;
         object-fit: contain;
         object-position: bottom center;
-        opacity: .25;
+        opacity: 0.25;
         z-index: -1;
 
-        @media(min-width: 1200px){
+        @media (min-width: 1200px) {
             right: 25px;
             opacity: 1;
             max-width: calc(50% - 100px);
@@ -159,61 +154,115 @@ body {
         }
     }
 
-    .button-group{
+    .button-group {
         display: flex;
         flex-wrap: wrap;
         column-gap: 50px;
     }
 
-    #personalProjectGrid{
+    #personalProjectGrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 50px;
         margin-top: 25px;
 
-        .project-card{
-
-            .project-image{
+        .project-card {
+            .project-image {
                 width: 100%;
                 height: 50vh;
                 background: $light-color;
                 position: relative;
 
-                .project-overlay{
+                .project-overlay {
                     display: none;
 
-                    .view-more-button{
+                    .view-more-button {
                         background: none;
                         border: none;
-                        color: #FFF;
+                        color: #fff;
                         font-size: 24px;
                         font-weight: 600;
                         cursor: pointer;
                     }
                 }
 
-                &:hover .project-overlay{
+                &:hover .project-overlay {
                     height: 100%;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    background-color: rgba($dark-color, .7);
+                    background-color: rgba($dark-color, 0.7);
                     cursor: pointer;
                 }
-
             }
 
-            .project-title{
+            .project-title {
                 font-size: 24px;
                 letter-spacing: 1.5px;
                 margin-bottom: 15px;
             }
 
-            .project-description{
+            .project-description {
                 margin: 0;
                 font-size: 20px;
+            }
+        }
+    }
+
+    #projectModal {
+        position: fixed;
+        height: 80vh;
+        width: 80vw;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 40px;
+
+        #modalContent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+
+            #modalDetails {
+                padding-top: 40px;
+            }
+
+            #modalMoreDetails {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+
+        #closeModal {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: none;
+            border: none;
+            font-weight: 700;
+            font-size: 30px;
+
+            svg {
+                height: 30px;
+            }
+        }
+
+        #modalLinks {
+            position: absolute;
+            right: 50px;
+            top: 40px;
+
+            .modal-link {
+                text-decoration: none;
+                color: $dark-color;
+
+                svg {
+                    height: 30px;
+                }
             }
         }
     }
