@@ -15,7 +15,7 @@
     <div id="wrapper">
         <img src="assets/panda-2.png" id="pandaImage" alt="cartoon panda image">
         <section id="about">
-            <div id="aboutContent">
+            <div id="aboutContent" class="section-content">
                 <H2 class="sub-header">FULL STACK DEVELOPER</H2>
                 <H1 class="header">MELISSA GIBSON</H1>
                 <p>The giant panda is a conservation-reliant vulnerable species. A 2007 report showed 239 pandas living
@@ -31,28 +31,60 @@
                     news site Mongabay stated that the wild giant panda population had increased by 268, or 16.8%, to
                     1,864. In 2016, the
                     IUCN reclassified the species from "endangered" to "vulnerable".</p>
-                <a href="#personalProjects" id="projectsLink" class="scroll-down" onclick="scrollDown('personalProjects', event)">Projects
-                    <svg class="arrow-down-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
-                        height="50" viewBox="0 0 172 172" style=" fill:#000000;">
-                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <path d="M0,172v-172h172v172z" fill="none"></path>
-                            <g class="arrow" fill="#ffffff">
-                                <path
-                                    d="M157.66667,86c0,-39.517 -32.14967,-71.66667 -71.66667,-71.66667c-39.517,0 -71.66667,32.14967 -71.66667,71.66667c0,39.517 32.14967,71.66667 71.66667,71.66667c39.517,0 71.66667,-32.14967 71.66667,-71.66667zM81.95083,120.15633l-17.2,-17.2c-1.10367,-1.10367 -1.68417,-2.56567 -1.68417,-4.05633c0,-0.73817 0.14333,-1.4835 0.43717,-2.193c0.88867,-2.14283 2.98133,-3.54033 5.29617,-3.54033h10.03333v-35.83333c0,-3.956 3.21067,-7.16667 7.16667,-7.16667v0c3.956,0 7.16667,3.21067 7.16667,7.16667v35.83333h10.03333c2.31483,0 4.4075,1.3975 5.29617,3.54033c0.8815,2.15 0.39417,4.60817 -1.23983,6.24933l-17.2,17.2c-2.24317,2.236 -5.8695,2.236 -8.1055,0z">
-                                </path>
+
+                <div class="button-group">
+                    <a href="#personalProjects" id="projectsLink" class="scroll-down"
+                        onclick="scrollDown('personalProjects', event)">Projects
+                        <svg class="arrow-down-icon button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g class="icon-path" fill="#ffffff">
+                                    <path
+                                        d="M157.66667,86c0,-39.517 -32.14967,-71.66667 -71.66667,-71.66667c-39.517,0 -71.66667,32.14967 -71.66667,71.66667c0,39.517 32.14967,71.66667 71.66667,71.66667c39.517,0 71.66667,-32.14967 71.66667,-71.66667zM81.95083,120.15633l-17.2,-17.2c-1.10367,-1.10367 -1.68417,-2.56567 -1.68417,-4.05633c0,-0.73817 0.14333,-1.4835 0.43717,-2.193c0.88867,-2.14283 2.98133,-3.54033 5.29617,-3.54033h10.03333v-35.83333c0,-3.956 3.21067,-7.16667 7.16667,-7.16667v0c3.956,0 7.16667,3.21067 7.16667,7.16667v35.83333h10.03333c2.31483,0 4.4075,1.3975 5.29617,3.54033c0.8815,2.15 0.39417,4.60817 -1.23983,6.24933l-17.2,17.2c-2.24317,2.236 -5.8695,2.236 -8.1055,0z">
+                                    </path>
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                </a>
+                        </svg>
+                    </a>
+
+                    <a href="#resume" id="resumeLink" class="scroll-down" onclick="scrollDown('resume', event)">Resume
+                        <svg class="resume-icon button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g class="icon-path" fill="#ffffff">
+                                    <path
+                                        d="M24.08,6.88v158.24h123.84v-158.24zM56.57188,51.35813c0.12094,-1.37063 0,-2.31125 0,-3.56094c-0.61813,-0.33594 -2.35156,-2.08281 -2.62031,-4.04469c0,0 -1.3975,-0.67187 -1.47813,-2.76812c-0.04031,-1.11531 0.73906,-1.90813 0.73906,-1.90813c-1.45125,-5.60344 -0.81969,-11.42187 6.67844,-11.55625c1.86781,0 3.27875,0.90031 3.84313,1.89469c5.21375,0 3.85656,7.26969 3.07719,9.66156c0.28219,0.29563 0.645,1.10188 0.645,2.17688c0,1.55875 -1.47812,2.49937 -1.47812,2.49937c-0.28219,1.98875 -1.67969,3.62813 -2.52625,4.03125c0,1.24969 -0.13438,2.20375 0,3.57438c1.47812,3.99094 11.38156,2.86219 11.85187,10.56187h-30.58375c0.45688,-7.69969 10.36031,-6.57094 11.85188,-10.56187zM96.32,134.16h-48.16c-1.89469,0 -3.44,-1.53187 -3.44,-3.44c0,-1.90812 1.54531,-3.44 3.44,-3.44h48.16c1.90813,0 3.44,1.53188 3.44,3.44c0,1.90813 -1.53187,3.44 -3.44,3.44zM44.72,110.08c0,-1.90812 1.54531,-3.44 3.44,-3.44h37.84c1.89469,0 3.44,1.53188 3.44,3.44c0,1.90813 -1.54531,3.44 -3.44,3.44h-37.84c-1.89469,0 -3.44,-1.53187 -3.44,-3.44zM96.32,92.88h-48.16c-1.89469,0 -3.44,-1.53187 -3.44,-3.44c0,-1.89469 1.54531,-3.44 3.44,-3.44h48.16c1.90813,0 3.44,1.54531 3.44,3.44c0,1.90813 -1.53187,3.44 -3.44,3.44zM123.84,134.16h-10.32c-1.90812,0 -3.44,-1.53187 -3.44,-3.44c0,-1.90812 1.53188,-3.44 3.44,-3.44h10.32c1.90813,0 3.44,1.53188 3.44,3.44c0,1.90813 -1.53187,3.44 -3.44,3.44zM123.84,113.52h-10.32c-1.90812,0 -3.44,-1.53187 -3.44,-3.44c0,-1.90812 1.53188,-3.44 3.44,-3.44h10.32c1.90813,0 3.44,1.53188 3.44,3.44c0,1.90813 -1.53187,3.44 -3.44,3.44zM123.84,92.88h-10.32c-1.90812,0 -3.44,-1.53187 -3.44,-3.44c0,-1.89469 1.53188,-3.44 3.44,-3.44h10.32c1.90813,0 3.44,1.54531 3.44,3.44c0,1.90813 -1.53187,3.44 -3.44,3.44zM123.84,58.48h-27.52c-1.90812,0 -3.44,-1.54531 -3.44,-3.44c0,-1.89469 1.53188,-3.44 3.44,-3.44h27.52c1.90813,0 3.44,1.54531 3.44,3.44c0,1.89469 -1.53187,3.44 -3.44,3.44zM123.84,41.28h-27.52c-1.90812,0 -3.44,-1.54531 -3.44,-3.44c0,-1.89469 1.53188,-3.44 3.44,-3.44h27.52c1.90813,0 3.44,1.54531 3.44,3.44c0,1.89469 -1.53187,3.44 -3.44,3.44z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
             </div>
         </section>
         <section id="personalProjects">
-
+            <div id="projectContent" class="section-content">
+                <H2 class="sub-header">PERSONAL</H2>
+                <H1 class="header">PROJECTS</H1>
+            </div>
+        </section>
+        <section id="resume">
+            <div id="resumeContent" class="section-content">
+                <H2 class="sub-header">MELISSA GIBSON</H2>
+                <H1 class="header">RESUME</H1>
+            </div>
         </section>
     </div>
 </body>
 <script src="script/main.js"></script>
+
 </html>

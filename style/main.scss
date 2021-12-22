@@ -47,19 +47,24 @@ body {
                 justify-content: center;
             }
 
-            #aboutContent {
-                width: 100%;
+            
+            }
+            
+        }
+
+        .section-content{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 color: #fff;
 
+                &#aboutContent {
+                width: 100%;
                 @media(min-width: 1200px){
                     width: 50%;
                     
                 }
             }
-        }
     }
 
     .header {
@@ -109,13 +114,13 @@ body {
         position: relative;
         overflow: hidden;
 
-        .arrow-down-icon {
+        .button-icon {
             height: 35px;
             position: absolute;
             right: 20px;
             top: 10px;
 
-            .arrow{
+            .icon-path{
                 transition: .1s ease all;
             }
         }
@@ -123,8 +128,8 @@ body {
         &:hover, &:focus{
             background-color: rgba($dark-color, .8);
             box-shadow: 0px 0px 10px 2px rgba($light-color, .5);
-            .arrow-down-icon{
-                .arrow{
+            .button-icon{
+                .icon-path{
                     fill: $light-color;
                 }
             }
@@ -147,5 +152,11 @@ body {
             max-width: calc(50% - 100px);
             object-position: bottom right;
         }
+    }
+
+    .button-group{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
     }
 }
