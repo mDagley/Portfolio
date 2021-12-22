@@ -31,21 +31,33 @@ body {
     section {
         min-height: calc(100vh - 100px);
         background: none;
-        padding: 50px;
+        padding: 25px;
+
+        @media(min-width: 1200px){
+            padding: 50px;
+        }
 
         &#about {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
-            width: 50%;
-            height: 100%;
+            min-height: 100%;
+
+            @media(min-width: 1200px){
+                justify-content: center;
+            }
 
             #aboutContent {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 color: #fff;
+
+                @media(min-width: 1200px){
+                    width: 50%;
+                    
+                }
             }
         }
     }
@@ -121,11 +133,19 @@ body {
 
     #pandaImage{
         position: fixed;
-        right: 25px;
-        bottom: 0px;
-        max-width: calc(50% - 100px);
+        bottom: 0;
+        max-width: 100%;
+        width: 100%;
         max-height: 975px;
         object-fit: contain;
-        object-position: bottom right;
+        object-position: bottom center;
+        opacity: .25;
+
+        @media(min-width: 1200px){
+            right: 25px;
+            opacity: 1;
+            max-width: calc(50% - 100px);
+            object-position: bottom right;
+        }
     }
 }

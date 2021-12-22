@@ -35,7 +35,13 @@ body p {
 #wrapper section {
   min-height: calc(100vh - 100px);
   background: none;
-  padding: 50px;
+  padding: 25px;
+}
+
+@media (min-width: 1200px) {
+  #wrapper section {
+    padding: 50px;
+  }
 }
 
 #wrapper section#about {
@@ -49,14 +55,19 @@ body p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  height: 100%;
+  min-height: 100%;
+}
+
+@media (min-width: 1200px) {
+  #wrapper section#about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #wrapper section#about #aboutContent {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,6 +79,12 @@ body p {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #fff;
+}
+
+@media (min-width: 1200px) {
+  #wrapper section#about #aboutContent {
+    width: 50%;
+  }
 }
 
 #wrapper .header {
@@ -147,13 +164,24 @@ body p {
 
 #wrapper #pandaImage {
   position: fixed;
-  right: 25px;
-  bottom: 0px;
-  max-width: calc(50% - 100px);
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
   max-height: 975px;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: bottom right;
-     object-position: bottom right;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+  opacity: .25;
+}
+
+@media (min-width: 1200px) {
+  #wrapper #pandaImage {
+    right: 25px;
+    opacity: 1;
+    max-width: calc(50% - 100px);
+    -o-object-position: bottom right;
+       object-position: bottom right;
+  }
 }
 /*# sourceMappingURL=main.css.map */
