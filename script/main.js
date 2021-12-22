@@ -26,9 +26,15 @@ let closeButton = document.getElementById("closeModal");
 closeButton.addEventListener("click", function(){
     let modal = document.getElementById("projectModal");
     modal.style.display = "none";
+
+    let modalOverlay = document.getElementById("modalOverlay");
+    modalOverlay.style.display = "none";
 })
 
 function openModal(){
     let modal = document.getElementById("projectModal");
     modal.style.display = "block";
+
+    let modalOverlay = document.getElementById("modalOverlay");
+    modalOverlay.style.display = "block";
 }

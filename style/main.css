@@ -264,7 +264,7 @@ body p {
   position: fixed;
   height: 80vh;
   width: 80vw;
-  z-index: 2;
+  z-index: 3;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -319,5 +319,16 @@ body p {
 
 #wrapper #projectModal #modalLinks .modal-link svg {
   height: 30px;
+}
+
+#modalOverlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(21, 45, 53, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
