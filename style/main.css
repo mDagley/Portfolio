@@ -33,13 +33,13 @@ body p {
 }
 
 #wrapper section {
-  min-height: calc(100vh - 100px);
   background: none;
   padding: 25px;
 }
 
 @media (min-width: 1200px) {
   #wrapper section {
+    min-height: calc(100vh - 100px);
     padding: 50px;
   }
 }
@@ -55,11 +55,11 @@ body p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-height: 100%;
 }
 
 @media (min-width: 1200px) {
   #wrapper section#about {
+    min-height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -178,6 +178,7 @@ body p {
   -o-object-position: bottom center;
      object-position: bottom center;
   opacity: .25;
+  z-index: -1;
 }
 
 @media (min-width: 1200px) {

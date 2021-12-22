@@ -12,12 +12,10 @@ wrapper.onscroll = function () {
 
     if ((wrapper.offsetHeight - y) > 200) {
         let height = wrapper.offsetHeight - y + 'px';
-        console.log(height)
         panda.style.height = height;
     }
 
     else {
-        console.log("Min Size")
         panda.style.height = '200px';
     }
 

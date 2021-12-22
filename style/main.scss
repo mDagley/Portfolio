@@ -29,11 +29,12 @@ body {
     height: 100%;
 
     section {
-        min-height: calc(100vh - 100px);
+        
         background: none;
         padding: 25px;
 
         @media(min-width: 1200px){
+            min-height: calc(100vh - 100px);
             padding: 50px;
         }
 
@@ -41,9 +42,10 @@ body {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            min-height: 100%;
+            
 
             @media(min-width: 1200px){
+                min-height: 100%;
                 justify-content: center;
             }
 
@@ -147,6 +149,7 @@ body {
         object-fit: contain;
         object-position: bottom center;
         opacity: .25;
+        z-index: -1;
 
         @media(min-width: 1200px){
             right: 25px;
