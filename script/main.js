@@ -45,8 +45,8 @@ for (i = 0; i < projects.length; i++) {
         <div class='project-card'>
             <div class='project-image'>
                 <img src='/assets/` + projects[i].thumbnail + `'>
-                <div class='project-overlay'>
-                    <button type='button' class='view-more-button'>VIEW MORE</button>
+                <div class='project-overlay' onclick="openModal()">
+                    <button type='button' class='view-more-button' onclick="openModal()">VIEW MORE</button>
                 </div>
             </div>
             <h3 class='project-title'>` + projects[i].title + `</h3>
