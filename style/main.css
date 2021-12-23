@@ -225,6 +225,7 @@ body p {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  position: absolute;
 }
 
 #wrapper #personalProjectGrid .project-card .project-image .project-overlay {
