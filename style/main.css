@@ -218,6 +218,15 @@ body p {
   position: relative;
 }
 
+#wrapper #personalProjectGrid .project-card .project-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 #wrapper #personalProjectGrid .project-card .project-image .project-overlay {
   display: none;
 }

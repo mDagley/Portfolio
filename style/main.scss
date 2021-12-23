@@ -173,6 +173,13 @@ body {
                 background: $light-color;
                 position: relative;
 
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
                 .project-overlay {
                     display: none;
 
@@ -270,13 +277,13 @@ body {
     }
 }
 
-#modalOverlay{
-        display: none;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background: rgba($dark-color, 0.7);
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
+#modalOverlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($dark-color, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}

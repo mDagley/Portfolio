@@ -78,33 +78,7 @@
                 <H1 class="header">PROJECTS</H1>
             </div>
             <div id="personalProjectGrid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay" onclick="openModal()">
-                            <button type="button" class="view-more-button" onclick="openModal()">VIEW MORE</button>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Title</h3>
-                    <p class="project-description">Description</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay" onclick="openModal()">
-                            <button type="button" class="view-more-button" onclick="openModal()">VIEW MORE</button>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Title</h3>
-                    <p class="project-description">Description</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay" onclick="openModal()">
-                            <button type="button" class="view-more-button" onclick="openModal()">VIEW MORE</button>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Title</h3>
-                    <p class="project-description">Description</p>
-                </div>
+                <!--This content will be injected in main.js using data.js-->
             </div>
             <button type="button" id="resumeLink" class="scroll-down" onclick="scrollDown('resume', event)">Resume
                 <svg class="resume-icon button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
@@ -133,8 +107,8 @@
                 </button>
                 <div id="modalLinks">
                     <a href="#" id="modalLiveLink" class="modal-link" title="View Live Demo">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px"
-                            y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#152d35;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 172 172" style=" fill:#152d35;">
                             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                                 stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                                 font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -149,11 +123,12 @@
                         </svg>
                     </a>
                     <a href="#" id="modalGitHubLink" class="modal-link" title="View Github">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-                            style=" fill:#152d35;">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 172 172" style=" fill:#152d35;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
                                 <path d="M0,172v-172h172v172z" fill="none"></path>
                                 <g fill="#152d35">
                                     <path
@@ -190,6 +165,7 @@
     </div>
     <div id="modalOverlay"></div>
 </body>
+<script src="script/data.js"></script>
 <script src="script/main.js"></script>
 
 </html>

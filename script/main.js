@@ -23,7 +23,7 @@ wrapper.onscroll = function () {
 
 let closeButton = document.getElementById("closeModal");
 
-closeButton.addEventListener("click", function(){
+closeButton.addEventListener("click", function () {
     let modal = document.getElementById("projectModal");
     modal.style.display = "none";
 
@@ -31,10 +31,28 @@ closeButton.addEventListener("click", function(){
     modalOverlay.style.display = "none";
 })
 
-function openModal(){
+function openModal() {
     let modal = document.getElementById("projectModal");
     modal.style.display = "block";
 
     let modalOverlay = document.getElementById("modalOverlay");
     modalOverlay.style.display = "block";
+}
+
+for (i = 0; i < projects.length; i++) {
+    console.log("Title: ", projects[i].title);
+    let projectCardString = `
+        <div class='project-card'>
+            <div class='project-image'>
+                <img src='/assets/` + projects[i].thumbnail + `'>
+                <div class='project-overlay'>
+                    <button type='button' class='view-more-button'>VIEW MORE</button>
+                </div>
+            </div>
+            <h3 class='project-title'>` + projects[i].title + `</h3>
+            <p class='project-description'>` + projects[i].description + `</p>
+        </div>
+    `
+    let projectGrid = document.getElementById("personalProjectGrid");
+    projectGrid.innerHTML += projectCardString;
 }
