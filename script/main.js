@@ -68,7 +68,7 @@ for (i = 0; i < projects.length; i++) {
     let projectCardString = `
         <div class='project-card'>
             <div class='project-image'>
-                <img src='/assets/` + projects[i].thumbnail + `'>
+                <img src='assets/` + projects[i].thumbnail + `'>
                 <div class='project-overlay' onclick="openModal(` + i + `)">
                     <button type='button' class='view-more-button' onclick="openModal(` + i + `)">VIEW MORE</button>
                 </div>
