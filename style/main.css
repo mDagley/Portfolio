@@ -289,6 +289,12 @@ body p {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 100%;
+  color: #152d35;
+}
+
+#wrapper #projectModal #modalContent h4 span {
+  color: #345b63;
+  font-weight: 400;
 }
 
 #wrapper #projectModal #modalContent #modalDetails {

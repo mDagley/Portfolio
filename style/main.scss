@@ -235,6 +235,14 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             height: 100%;
+            color: $dark-color;
+
+            h4{
+                span{
+                    color: $mid-color;
+                    font-weight: 400;
+                }
+            }
 
             #modalDetails {
                 padding-top: 40px;
