@@ -57,10 +57,26 @@ function openModal(index) {
     modalOutcomes.innerHTML = projects[index].outcomes;
 
     let liveLink = document.getElementById("modalLiveLink");
-    liveLink.setAttribute("href", projects[index].url);
+    if (projects[index].url != "") {
+        liveLink.setAttribute("href", projects[index].url);
+        liveLink.style.display = "inline-block";
+    }
+
+    else {
+        liveLink.style.display = "none";
+    }
 
     let gitHubLink = document.getElementById("modalGitHubLink");
-    gitHubLink.setAttribute("href", projects[index].github);
+
+    if (projects[index].github != ""){
+        gitHubLink.setAttribute("href", projects[index].github);
+        gitHubLink.style.display = "inline-block";
+    }
+    
+    else{
+        gitHubLink.style.display = "none";
+    }
+    
 }
 
 for (i = 0; i < projects.length; i++) {
