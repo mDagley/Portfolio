@@ -3,7 +3,7 @@ var projects =
         {
             "title": "Panda Ipsum",
             "description": "This is a quick 'panda ipsum' generator that I made.",
-            "thumbnail": "panda-ipsum-thumbnail.png",
+            "thumbnail": "panda-ipsum-thumbnail-2.png",
             "date": "January 2020",
             "technology": "HTML, CSS, Javascript, Express.js",
             "purpose": "Just a fun project to create my own personal lorem ipsum content. When building out dev sites I'm known for using panda images for everything, so this seemed like a logical next step.",
@@ -13,7 +13,7 @@ var projects =
             "photos":
                 [
                     {
-                        "url": "panda-ipsum-thumbnail.PNG",
+                        "url": "panda-ipsum-thumbnail-2.png",
                         "alt": "",
                         "title": ""
                     }
