@@ -68,15 +68,15 @@ function openModal(index) {
 
     let gitHubLink = document.getElementById("modalGitHubLink");
 
-    if (projects[index].github != ""){
+    if (projects[index].github != "") {
         gitHubLink.setAttribute("href", projects[index].github);
         gitHubLink.style.display = "inline-block";
     }
-    
-    else{
+
+    else {
         gitHubLink.style.display = "none";
     }
-    
+
 }
 
 for (i = 0; i < projects.length; i++) {
@@ -96,3 +96,6 @@ for (i = 0; i < projects.length; i++) {
     let projectGrid = document.getElementById("personalProjectGrid");
     projectGrid.innerHTML += projectCardString;
 }
+
+var d = new Date();
+document.getElementById("year").innerHTML = d.getFullYear();

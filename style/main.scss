@@ -289,8 +289,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: calc(100vh - 145px);
+    width: 50%;
     ul{
         padding: 0;
         list-style: none;
