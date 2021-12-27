@@ -214,7 +214,7 @@ body p {
 #wrapper #personalProjectGrid .project-card .project-image {
   width: 100%;
   height: 50vh;
-  background: #FFF;
+  background: #fff;
   position: relative;
 }
 
@@ -337,6 +337,45 @@ body p {
   height: 30px;
 }
 
+#wrapper #sourcesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 145px);
+}
+
+#wrapper #sourcesContent ul {
+  padding: 0;
+  list-style: none;
+}
+
+#wrapper #sourcesContent ul li {
+  font-weight: 500;
+}
+
+#wrapper #sourcesContent ul li a {
+  font-weight: 400;
+  color: #152d35;
+}
+
+#wrapper #sourcesContent .scroll-down {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
 #modalOverlay {
   display: none;
   position: fixed;
@@ -346,5 +385,29 @@ body p {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+footer {
+  background-color: #152d35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+  color: #d4ecdd;
 }
 /*# sourceMappingURL=main.css.map */
