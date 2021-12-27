@@ -214,15 +214,15 @@ body p {
 #wrapper #personalProjectGrid .project-card .project-image {
   width: 100%;
   height: 50vh;
-  background: #d4ecdd;
+  background: #FFF;
   position: relative;
 }
 
 #wrapper #personalProjectGrid .project-card .project-image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
   position: absolute;
