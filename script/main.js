@@ -94,7 +94,15 @@ for (i = 0; i < projects.length; i++) {
         </div>
     `
     let projectGrid = document.getElementById("personalProjectGrid");
-    projectGrid.innerHTML += projectCardString;
+    if (projects[i].type === "personal") {
+        projectGrid.innerHTML += projectCardString;
+    }
+
+    let proProjectGrid = document.getElementById("proProjectGrid");
+    if (projects[i].type === "professional") {
+        proProjectGrid.innerHTML += projectCardString;
+    }
+
 }
 
 var d = new Date();

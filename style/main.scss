@@ -159,11 +159,12 @@ body {
         column-gap: 50px;
     }
 
-    #personalProjectGrid {
+    .project-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 50px;
         margin-top: 25px;
+        margin-bottom: 50px;
 
         .project-card {
             .project-image {

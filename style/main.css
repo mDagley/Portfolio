@@ -200,7 +200,7 @@ body p {
           column-gap: 50px;
 }
 
-#wrapper #personalProjectGrid {
+#wrapper .project-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -208,16 +208,17 @@ body p {
   -webkit-column-gap: 50px;
           column-gap: 50px;
   margin-top: 25px;
+  margin-bottom: 50px;
 }
 
-#wrapper #personalProjectGrid .project-card .project-image {
+#wrapper .project-grid .project-card .project-image {
   width: 100%;
   height: 50vh;
   background: #fff;
   position: relative;
 }
 
-#wrapper #personalProjectGrid .project-card .project-image img {
+#wrapper .project-grid .project-card .project-image img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
@@ -227,11 +228,11 @@ body p {
   position: absolute;
 }
 
-#wrapper #personalProjectGrid .project-card .project-image .project-overlay {
+#wrapper .project-grid .project-card .project-image .project-overlay {
   display: none;
 }
 
-#wrapper #personalProjectGrid .project-card .project-image .project-overlay .view-more-button {
+#wrapper .project-grid .project-card .project-image .project-overlay .view-more-button {
   background: none;
   border: none;
   color: #fff;
@@ -240,7 +241,7 @@ body p {
   cursor: pointer;
 }
 
-#wrapper #personalProjectGrid .project-card .project-image:hover .project-overlay {
+#wrapper .project-grid .project-card .project-image:hover .project-overlay {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -257,13 +258,13 @@ body p {
   cursor: pointer;
 }
 
-#wrapper #personalProjectGrid .project-card .project-title {
+#wrapper .project-grid .project-card .project-title {
   font-size: 24px;
   letter-spacing: 1.5px;
   margin-bottom: 15px;
 }
 
-#wrapper #personalProjectGrid .project-card .project-description {
+#wrapper .project-grid .project-card .project-description {
   margin: 0;
   font-size: 20px;
 }
