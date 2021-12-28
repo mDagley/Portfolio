@@ -33,7 +33,6 @@ body {
         padding: 25px;
 
         @media (min-width: 1200px) {
-            min-height: calc(100vh - 100px);
             padding: 50px;
         }
 
@@ -285,31 +284,69 @@ body {
         }
     }
 
-    #sourcesContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: calc(100vh - 145px);
-    width: 50%;
-    ul{
-        padding: 0;
-        list-style: none;
-        li
-        {
-            font-weight: 500;
-            a{
-                font-weight: 400;
-                color: $dark-color;
+    #sourcesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: calc(100vh - 145px);
+        width: 50%;
+        ul {
+            padding: 0;
+            list-style: none;
+            li {
+                font-weight: 500;
+                a {
+                    font-weight: 400;
+                    color: $dark-color;
+                }
+            }
+        }
+        .scroll-down {
+            padding: 10px 20px;
+            display: flex;
+            width: auto;
+        }
+    }
+
+    #resume {
+        #resumeContent {
+            h3 {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                font-weight: 300;
+                font-size: 24px;
+            }
+            h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            h5{
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            .stats {
+                margin-top: 0;
+                margin-bottom: 20px;
+                .stat-item {
+                    display: inline-block;
+                    font-weight: 500;
+                    &.stat-item-year {
+                        display: block;
+                        font-weight: 300;
+                    }
+                }
             }
         }
     }
-    .scroll-down{
-        padding: 10px 20px;
-        display: flex;
-        width: auto;
-    }
-}
 }
 
 #modalOverlay {
@@ -331,14 +368,13 @@ footer {
     padding: 10px 20px;
     color: #fff;
 
-    a{
-        color: #FFF;
+    a {
+        color: #fff;
         text-decoration: none;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             color: $light-color;
         }
     }
 }
-
-

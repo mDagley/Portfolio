@@ -39,7 +39,6 @@ body p {
 
 @media (min-width: 1200px) {
   #wrapper section {
-    min-height: calc(100vh - 100px);
     padding: 50px;
   }
 }
@@ -377,6 +376,44 @@ body p {
   width: auto;
 }
 
+#wrapper #resume #resumeContent h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+#wrapper #resume #resumeContent h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#wrapper #resume #resumeContent h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#wrapper #resume #resumeContent .stats {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#wrapper #resume #resumeContent .stats .stat-item {
+  display: inline-block;
+  font-weight: 500;
+}
+
+#wrapper #resume #resumeContent .stats .stat-item.stat-item-year {
+  display: block;
+  font-weight: 300;
+}
+
 #modalOverlay {
   display: none;
   position: fixed;
@@ -404,7 +441,7 @@ footer {
 }
 
 footer a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
