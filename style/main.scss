@@ -28,6 +28,38 @@ body {
     overflow: auto;
     height: 100%;
 
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 10px 0;
+        background-color: rgba(#FFF, .7);
+        z-index: 10;
+
+        nav{
+            margin-right: 75px;
+
+            button{
+                background: none;
+                border: none;
+                color: $dark-color;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                margin-left: 20px;
+                cursor: pointer;
+                transition: ease .5s all;
+
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
+    }
+
     section {
         background: none;
         padding: 25px;
@@ -59,6 +91,10 @@ body {
             @media (min-width: 1200px) {
                 width: 50%;
             }
+        }
+
+        &#proProjectContent{
+            padding-top: 50px;
         }
     }
 
@@ -164,7 +200,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 50px;
         margin-top: 25px;
-        margin-bottom: 50px;
 
         .project-card {
             .project-image {
@@ -327,7 +362,7 @@ body {
                 text-transform: uppercase;
             }
 
-            h5{
+            h5 {
                 margin: 0;
                 font-size: 18px;
                 font-weight: 500;
