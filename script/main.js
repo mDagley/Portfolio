@@ -5,20 +5,22 @@ function scrollDown(section, event) {
     element.scrollIntoView({ behavior: 'smooth' });
 }
 
-let wrapper = document.getElementById("wrapper");
-wrapper.onscroll = function () {
-    let y = wrapper.scrollTop;
-    let panda = document.getElementById("pandaImage");
+if (window.innerWidth > 1199) {
+    let wrapper = document.getElementById("wrapper");
+    wrapper.onscroll = function () {
+        let y = wrapper.scrollTop;
+        let panda = document.getElementById("pandaImage");
 
-    if ((wrapper.offsetHeight - y) > 200) {
-        let height = wrapper.offsetHeight - y + 'px';
-        panda.style.height = height;
+        if ((wrapper.offsetHeight - y) > 200) {
+            let height = wrapper.offsetHeight - y + 'px';
+            panda.style.height = height;
+        }
+
+        else {
+            panda.style.height = '200px';
+        }
+
     }
-
-    else {
-        panda.style.height = '200px';
-    }
-
 }
 
 let closeButton = document.getElementById("closeModal");
