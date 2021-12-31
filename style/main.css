@@ -138,6 +138,13 @@ body p {
   font-size: 72px;
   line-height: 1;
   margin: 0;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  #wrapper .header {
+    display: block;
+  }
 }
 
 #wrapper .sub-header {
