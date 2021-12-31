@@ -573,6 +573,17 @@ body p {
   font-weight: 300;
 }
 
+#wrapper #resume .scroll-down {
+  width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrapper #resume .scroll-down svg {
+  top: 12px;
+}
+
 #modalOverlay {
   display: none;
   position: fixed;
