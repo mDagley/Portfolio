@@ -197,16 +197,32 @@ body {
 
     .project-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 50px;
+        grid-template-columns: 100%;
         margin-top: 25px;
+        row-gap: 50px;
+
+        @media(min-width: 768px){
+            column-gap: 50px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(min-width: 1200px){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         .project-card {
             .project-image {
                 width: 100%;
-                height: 50vh;
+                height: 250px;
                 background: #fff;
                 position: relative;
+
+                @media(min-width: 768px){
+                    height: 300px;
+                }
+
+                @media(min-width: 1200px){
+                    height: 50vh;
+                }
 
                 img {
                     height: 100%;
@@ -268,11 +284,15 @@ body {
 
         #modalContent {
             display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 66% 33%;
+            grid-template-columns: 100%;
+            grid-template-rows: 33% 66%;
             height: 100%;
             color: $dark-color;
             overflow: auto;
+
+            @media(min-width: 768px){
+                grid-template-rows: 66% 33%;
+            }
 
             h4 {
                 span {
@@ -314,6 +334,7 @@ body {
                             background-color: $dark-color;
                             padding: 10px;
                             border-radius: 50%;
+                            transition: ease 0.5s all;
                         }
 
                         &:hover,
@@ -323,6 +344,16 @@ body {
                             }
                         }
                     }
+                }
+            }
+
+            #modalDetails {
+                display: grid;
+                grid-template-columns: 100%;
+                @media (min-width: 1200px) {
+                    width: calc(100% - 20px);
+                    grid-template-columns: 50% 50%;
+                    column-gap: 20px;
                 }
             }
         }
@@ -336,6 +367,14 @@ body {
             font-weight: 700;
             font-size: 30px;
             cursor: pointer;
+            transition: ease 0.5s all;
+
+            &:hover,
+            &:focus {
+                svg path {
+                    fill: $mid-color;
+                }
+            }
 
             svg {
                 height: 30px;
