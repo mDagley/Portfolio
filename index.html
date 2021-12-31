@@ -9,6 +9,8 @@
         content="Melissa Gibson is a full stack developer with a masters in Computer Science and has experience developing professional websites, templates, apis, and more">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/main.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.12/dist/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.12/dist/fancybox.css" />
 </head>
 
 <body>
@@ -16,8 +18,10 @@
         <header>
             <nav>
                 <button type="button" class="nav-button" onclick="scrollDown('about', event)">About</button>
-                <button type="button" class="nav-button" onclick="scrollDown('personalProjects', event)">Personal Projects</button>
-                <button type="button" class="nav-button" onclick="scrollDown('proProjectContent', event)">Professional Projects</button>
+                <button type="button" class="nav-button" onclick="scrollDown('personalProjects', event)">Personal
+                    Projects</button>
+                <button type="button" class="nav-button" onclick="scrollDown('proProjectContent', event)">Professional
+                    Projects</button>
                 <button type="button" class="nav-button" onclick="scrollDown('resume', event)">Resume</button>
             </nav>
         </header>
@@ -91,12 +95,14 @@
             <div id="personalProjectGrid" class="project-grid">
                 <!--This content will be injected in main.js using data.js-->
             </div>
-            <button type="button" id="projectsLink" class="scroll-down" onclick="scrollDown('proProjectContent', event)">More Projects
-                <svg class="arrow-down-icon button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
-                    viewBox="0 0 172 172" style=" fill:#000000;">
-                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <button type="button" id="projectsLink" class="scroll-down"
+                onclick="scrollDown('proProjectContent', event)">More Projects
+                <svg class="arrow-down-icon button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+                    height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
                         <path d="M0,172v-172h172v172z" fill="none"></path>
                         <g class="icon-path" fill="#ffffff">
                             <path
@@ -154,6 +160,7 @@
                                 </g>
                             </g>
                         </svg>
+                        Live Demo
                     </a>
                     <a href="#" id="modalGitHubLink" class="modal-link" title="View Github" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
@@ -170,11 +177,12 @@
                                 </g>
                             </g>
                         </svg>
+                        Github
                     </a>
                 </div>
                 <div id="modalContent">
                     <div id="modalGallery">
-
+                        <div id="carousel"></div>
                     </div>
                     <div id="modalDetails">
                         <h4 id="modalTitleTitle">Title: <span id="modalTitle"></span></h4>
@@ -261,6 +269,9 @@
 
 </body>
 <script src="script/data.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.12/dist/carousel.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="script/main.js"></script>
+
 
 </html>

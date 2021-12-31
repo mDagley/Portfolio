@@ -59,7 +59,7 @@ function openModal(index) {
     let liveLink = document.getElementById("modalLiveLink");
     if (projects[index].url != "") {
         liveLink.setAttribute("href", projects[index].url);
-        liveLink.style.display = "inline-block";
+        liveLink.style.display = "flex";
     }
 
     else {
@@ -70,17 +70,38 @@ function openModal(index) {
 
     if (projects[index].github != "") {
         gitHubLink.setAttribute("href", projects[index].github);
-        gitHubLink.style.display = "inline-block";
+        gitHubLink.style.display = "flex";
     }
 
     else {
         gitHubLink.style.display = "none";
     }
 
+    buildModalGallery(projects[index].photos);
+
+}
+
+function buildModalGallery(photos) {
+    let photoContainer = document.getElementById("carousel");
+    let photoString = "";
+    for (i = 0; i < photos.length; i++) {
+        photoString += `
+            <img class="carousel__slide" data-caption="` + photos[i].caption + `" data-fancybox data-src="assets/` + photos[i].url + `" src="assets/` + photos[i].url + `" alt="` + photos[i].alt + `" title="` + photos[i].title + `">
+    `
+    }
+
+    photoContainer.innerHTML = photoString;
+    const myCarousel = new Carousel(document.querySelector("#carousel"), {
+        center: true,
+        infinite: true
+    });
+    Fancybox.bind("#modalGallery img", {
+        groupAll: true
+    });
+
 }
 
 for (i = 0; i < projects.length; i++) {
-    console.log("Title: ", projects[i].title);
     let projectCardString = `
         <div class='project-card'>
             <div class='project-image'>

@@ -15,7 +15,8 @@ var projects =
                     {
                         "url": "panda-ipsum-thumbnail-2.png",
                         "alt": "",
-                        "title": ""
+                        "title": "",
+                        "caption": "This is a test caption"
                     }
                 ],
             "type": "personal"
@@ -35,7 +36,8 @@ var projects =
                     {
                         "url": "conrex-thumbnail.png",
                         "alt": "",
-                        "title": ""
+                        "title": "",
+                        "caption": "This is a test caption"
                     }
                 ],
             "type": "professional"
@@ -55,7 +57,8 @@ var projects =
                     {
                         "url": "savannah-thumbnail.png",
                         "alt": "",
-                        "title": ""
+                        "title": "",
+                        "caption": "This is a test caption"
                     }
                 ],
             "type": "professional"
@@ -74,8 +77,9 @@ var projects =
                 [
                     {
                         "url": "gaslamp-thumbnail.png",
-                        "alt": "",
-                        "title": ""
+                        "alt": "Gaslamp Theme Thumbnail",
+                        "title": "Gaslamp Theme Thumbnail",
+                        "caption": "This is a test caption"
                     }
                 ],
             "type": "professional"

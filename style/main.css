@@ -61,12 +61,12 @@ body p {
   letter-spacing: 1.5px;
   margin-left: 20px;
   cursor: pointer;
-  -webkit-transition: ease .5s all;
-  transition: ease .5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
 }
 
 #wrapper header nav button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #wrapper section {
@@ -326,10 +326,13 @@ body p {
 #wrapper #projectModal #modalContent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 66% 33%;
+      grid-template-rows: 66% 33%;
   height: 100%;
   color: #152d35;
+  overflow: auto;
 }
 
 #wrapper #projectModal #modalContent h4 span {
@@ -337,14 +340,50 @@ body p {
   font-weight: 400;
 }
 
-#wrapper #projectModal #modalContent #modalDetails {
-  padding-top: 40px;
-}
-
-#wrapper #projectModal #modalContent #modalMoreDetails {
+#wrapper #projectModal #modalContent #modalGallery {
+  width: 100%;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel {
+  position: relative;
+  height: 100%;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__viewport {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__viewport .carousel__track {
+  height: 100%;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__viewport .carousel__slide {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__dots {
+  display: none;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__button svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+  background-color: #152d35;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#wrapper #projectModal #modalContent #modalGallery #carousel .carousel__button:hover svg, #wrapper #projectModal #modalContent #modalGallery #carousel .carousel__button:focus svg {
+  background-color: #345b63;
 }
 
 #wrapper #projectModal #closeModal {
@@ -364,13 +403,27 @@ body p {
 
 #wrapper #projectModal #modalLinks {
   position: absolute;
-  right: 50px;
-  top: 40px;
+  left: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
 }
 
 #wrapper #projectModal #modalLinks .modal-link {
   text-decoration: none;
   color: #152d35;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper #projectModal #modalLinks .modal-link:hover svg g, #wrapper #projectModal #modalLinks .modal-link:focus svg g {
+  fill: #345b63;
 }
 
 #wrapper #projectModal #modalLinks .modal-link svg {
