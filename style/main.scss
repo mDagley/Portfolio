@@ -29,7 +29,6 @@ body {
     height: 100%;
 
     header {
-        display: flex;
         position: fixed;
         top: 0;
         left: 0;
@@ -38,6 +37,11 @@ body {
         padding: 10px 0;
         background-color: rgba(#fff, 0.7);
         z-index: 10;
+        display: none;
+
+        @media(min-width: 1200px){
+            display: flex;
+        }
 
         nav {
             margin-right: 75px;
@@ -106,11 +110,6 @@ body {
         font-size: 72px;
         line-height: 1;
         margin: 0;
-        display: none;
-
-        @media(min-width: 1200px){
-            display: block;
-        }
     }
 
     .sub-header {
