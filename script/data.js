@@ -40,6 +40,45 @@ var projects =
             "type": "personal"
         },
         {
+            "title": "Wedding Website",
+            "description": "This is the site I created for my 2021 wedding.",
+            "thumbnail": "/wedding/home.png",
+            "date": "June 2020",
+            "technology": "HTML, CSS, Javascript, PHP",
+            "purpose": "I wasn't satisfied with any of the wedding site builders, so I decided to design and build my own site. I tried to keept things pretty simple and used plug-ins where I could.",
+            "outcomes": "The site was easy to maintain, I hosted it using netlify and I used google forms for the RSVPs so that I could manage all of our responses in a google sheet document. I used the flickr api for the photos on my gallery page, but I did run into some limitations on the number of photos I could get from the api.",
+            "url": "http://www.TaleOfTwoGibsons.com/",
+            "github": "",
+            "photos":
+                [
+                    {
+                        "url": "/wedding/home.png",
+                        "alt": "Screenshot of the home page of my wedding website",
+                        "title": "The home page of my wedding website",
+                        "caption": "The home page of my wedding website"
+                    },
+                    {
+                        "url": "/wedding/menu.png",
+                        "alt": "Screenshot of my wedding website menu",
+                        "title": "My wedding website menu",
+                        "caption": "My wedding website menu"
+                    },
+                    {
+                        "url": "/wedding/google-form.png",
+                        "alt": "Screenshot of the google form integration",
+                        "title": "The google form integration on my wedding website",
+                        "caption": "The google form integration on my wedding website"
+                    },
+                    {
+                        "url": "/wedding/gallery.png",
+                        "alt": "Screenshot of the gallery on my wedding website",
+                        "title": "Screenshot of the gallery on my wedding website. The images are pulled from flickr using their api.",
+                        "caption": "Screenshot of the gallery on my wedding website. The images are pulled from flickr using their api."
+                    }
+                ],
+            "type": "personal"
+        },
+        {
             "title": "Conrex Corporate",
             "description": "This is a custom corporate site that I built per client and design specifications.",
             "thumbnail": "conrex-thumbnail.png",
