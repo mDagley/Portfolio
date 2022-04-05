@@ -2,7 +2,7 @@ $light-color: #d4ecdd;
 $mid-color: #345b63;
 $dark-color: #152d35;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 body {
     padding: 0;
     margin: 0;
@@ -473,12 +473,36 @@ body {
                     }
                 }
             }
+
+            .role-tasks {
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                }
+                .task {
+                    margin-bottom: 20px;
+                    .stats {
+                        margin-bottom: 0;
+                        display: flex;
+                        justify-content: flex-start;
+
+                        .stat-item-year{
+                            margin-left: 30px;
+                        }
+                    }
+
+                    .tech{
+                        font-style: italic;
+                    }
+                }
+            }
         }
+
         .scroll-down {
             width: 150px;
             justify-content: center;
 
-            svg{
+            svg {
                 top: 12px;
             }
         }
