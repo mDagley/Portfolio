@@ -79,6 +79,27 @@ var projects =
             "type": "personal"
         },
         {
+            "title": "The Panda Post",
+            "description": "A fun little news app I'm building to learn React.",
+            "thumbnail": "/pandapost/home.png",
+            "date": "March 2022",
+            "technology": "React, Javascript, CSS",
+            "purpose": "I'm building this app as a way to learn React. I'm using the news api and currently have a basic feed of articles. I will continue adding new features.",
+            "outcomes": "This is currently in progress, but I'm hopeful to be more comfortable with React once I have completed this project.",
+            "url": "",
+            "github": "https://github.com/mDagley/PandaPost",
+            "photos":
+                [
+                    {
+                        "url": "/pandapost/home.png",
+                        "alt": "Screenshot of the home page of the panda post",
+                        "title": "The home page of The Panda Post",
+                        "caption": "The home page of The Panda Post"
+                    }
+                ],
+            "type": "personal"
+        },
+        {
             "title": "Conrex Corporate",
             "description": "This is a custom corporate site that I built per client and design specifications.",
             "thumbnail": "conrex-thumbnail.png",
